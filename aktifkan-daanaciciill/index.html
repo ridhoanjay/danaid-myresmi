@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DANA</title>
+  <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#118EEA">
+  <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="https://a.m.dana.id/resource/danaweb-v2/finance-section-image-2.png">
+  <meta name="description" content="Ada kirim uang untukmu Terima uang nya di aplikasi DANA Download di sini">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  background-image: url('https://a.m.dana.id/resource/danaweb-v2/finance-section-image-2.png');
+  background-size: 970px 1400px;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 970px;
+  height: 1800px;
+  background-color: transparent;
+  z-index: 1;
+}
+h1 {
+    position: absolute;
+    top: 500px;
+    left: 420px;
+    width: 40%;
+    height: 100px;
+    color: #ffff;
+    font-size: 50px;
+}
+h2 {
+    position: absolute;
+    bottom: 260px;
+    left: 360px;
+    width: 40%;
+    height: 100px;
+    color: #ffff;
+    font-size: 50px;
+}
+</style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const overlay = document.querySelector('.overlay');
+      overlay.addEventListener('click', function() {
+        window.location.href = "./../int.html";
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1 class="part"></h1>
+  <h2 class="part"></h2>
+  <button onclick="window.location.href='int.html'">
+    <div class="overlay"></div>
+  </a>
+</body>
+</html>
